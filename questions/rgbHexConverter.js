@@ -4,7 +4,6 @@
  */
 const rgbToHexConversion = (...rgbValues) => {
   if (!(rgbValues.length < 4)) {
-    // console.log(rgbValues.length);
     throw "Invalid Input";
   }
   if (!(rgbValues[0] <= 255 && rgbValues[1] <= 255 && rgbValues[2] <= 255)) {

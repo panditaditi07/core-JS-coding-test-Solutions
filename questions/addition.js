@@ -5,8 +5,6 @@
 */
 
 const addition = (...numbers) => {
-  // all your code
-  // for (let i = 0; i < numbers.length; i++) {
   if (numbers.length === 0 || typeof numbers == "undefined") {
     throw "Invalid Input";
   }
@@ -18,5 +16,5 @@ const addition = (...numbers) => {
     }
   }
 };
-
+addition(10, 20);
 module.exports = addition;
