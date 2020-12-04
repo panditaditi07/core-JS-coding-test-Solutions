@@ -6,6 +6,17 @@
 
 const addition = (...numbers) => {
   // all your code
+  // for (let i = 0; i < numbers.length; i++) {
+  if (numbers.length === 0 || typeof numbers == "undefined") {
+    throw "Invalid Input";
+  }
+  for (let i = 0; i < numbers.length; i++) {
+    if (!Number.isInteger(numbers[i])) {
+      throw "Invalid Input";
+    } else {
+      return numbers.reduce((a, b) => a + b, 0);
+    }
+  }
 };
 
 module.exports = addition;
