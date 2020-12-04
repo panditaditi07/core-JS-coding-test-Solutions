@@ -1,9 +1,9 @@
+// str = input string
+// n = number of rotations
+//
+// input str = random ,1, right
+// output mrando
 const rotateString = (str, n, direction) => {
-  // str = input string
-  // n = number of rotations
-  //
-  // input str = random ,1, right
-  // output mrando
   if (direction == "left") {
     let string_array = str.split("");
     for (let i = 0; i < n; i++) {
