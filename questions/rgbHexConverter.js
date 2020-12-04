@@ -29,14 +29,3 @@ const rgbToHexConversion = (...rgbValues) => {
 };
 
 module.exports = rgbToHexConversion;
-
-// const componentToHex = (c) => {
-//   let hex = c.toString(16);
-//   return hex.length == 1 ? "0" + hex : hex;
-// };
-// return (
-//   "#" +
-//   componentToHex(rgbValues[0]) +
-//   componentToHex(rgbValues[1]) +
-//   componentToHex(rgbValues[2])
-// );
